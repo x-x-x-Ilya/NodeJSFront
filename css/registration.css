@@ -1,0 +1,189 @@
+* {
+    background-color: rgb(255, 255, 255);
+    background-color: #181a1b; /* #131516 #202324;*/ 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: limegreen;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body, 
+h1, h2, h3, h4,
+p,
+ul[class], ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+        margin: 0;
+        /*убираем верхнее и нижнее поле, равное 1em*/
+        padding-left: 0;
+        /*убираем левый отступ, равный 40px*/
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    display: flex;
+    background-color: #131516;
+    color: limegreen;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+article  {
+    padding: 3%;
+    background-color: #202324;
+    margin-top: 5%;
+    width: 30%;
+    height: auto;
+}
+article  > p {
+    box-shadow: '0px 0px 25px #ff0000';
+    border: 2px double #202324;
+    text-align: center;
+    background-color: #202324;
+}
+
+
+article  > div {
+    background-color: #202324;
+    box-shadow: '0px 0px 25px #ff0000';
+    border: 2px double #202324;
+}
+
+
+
+article > div {
+    width: 90%;
+    margin: 0 auto 0 ;
+    margin-top: 1%;
+}
+
+article > div > input {
+    border: 2px double #202324;
+    box-shadow: '0px 0px 25px #ff0000';
+    font-size: 80%; 
+    color: limegreen;
+    background-color: black;
+    margin-top: 2%;
+}
+
+article > p {
+    border: 2px double #202324;
+    box-shadow: '0px 0px 25px #ff0000';
+    font-size: 85%; 
+    background-color:rgb(26, 28, 29)
+} 
+
+article > div > p {
+    border: 2px double #202324;
+    box-shadow: '0px 0px 25px #ff0000';
+    text-align: center;
+    font-size: 50%; 
+    background-color:  rgb(26, 28, 29)
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    box-shadow: '0px 0px 25px blue';
+    color: blue;
+    opacity: 0.5; /* Firefox */
+  }
+
+article > div > button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: limegreen;
+    background-color: black;
+}
+
+
+
+article > button {
+    color: limegreen;
+    background-color: black;
+}
+
+footer  {
+    display: block;
+    background-color: #202324;
+}
+
+footer > p {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 45%; 
+    text-align: center;
+    background-color: #202324;
+}
