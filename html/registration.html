@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
-    <link href="../css/registration.css" rel="stylesheet">
+    <script src="../js/registration.js"></script>
+    <link rel="stylesheet/css" type="text/css" href="../css/clean.css" />
+    <link rel="stylesheet/less" type="text/css" href="../css/registration.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
 </head>
 
 <body>
@@ -13,22 +16,21 @@
     <article>
 
         <p>Зарегистрируйтесь, чтобы смотреть фото и видео ваших друзей.</p>
-        <div>
-            <input type="text" placeholder="Моб. телефон или эл. адрес">
-            <input type="text" placeholder="Имя и фамилия">
-            <input type="text" placeholder="Имя пользователя">
-            <input type="text" placeholder="Пароль">
-            <button href="#">Регистрация</button>
-            <p>
-                Регистрируясь, вы принимаете наши Условия,
-                Политику использования данных и Политику
-                в отношении файлов cookie.
-            </p>
+        <input type=" text" id="email" placeholder="Электронный адрес">
+        <input type="text" id="firstName" placeholder="Имя">
+        <input type="text" id="lastName" placeholder="Фамилия">
+        <input type="text" id="password" placeholder="Пароль">
+        <button onclick="registration()" id="registration">Регистрация</button>
+        <p>
+            Регистрируясь, вы принимаете наши Условия,
+            Политику использования данных и Политику
+            в отношении файлов cookie.
+        </p>
 
-            <p>Есть аккаунт?</p>
-            <button href="#">Вход</button>
-            <p>Установите приложение.</p>
-        </div>
+        <p>Есть аккаунт?</p>
+        <button href="#">Вход</button>
+        <p>Установите приложение.</p>
+        </>
     </article>
 
     <footer>
